@@ -1,0 +1,449 @@
+<resources>
+    <string name="app_name">MSBUDDY</string>
+
+    <string name="radioButton1">2018, August</string>
+    <string name="radioButton2">2019, January</string>
+
+    <!--Education Details -->
+    <string name="edRadio1">Bachelors</string>
+    <string name="edRadio2">Masters</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="header_title">
+        <item>Profile Evaluator</item>
+        <item>Timeline</item>
+        <item>About Exams</item>
+        <item>university ranking</item>
+    </string-array>
+    <string-array name="list_of_items">
+        <item>about GRE</item>
+        <item>about TOEFL</item>
+        <item>about IELTS</item>
+    </string-array>
+    <string name="title_activity_gre__scrolling">GRE_ScrollingActivity</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+
+    <string name="gre_1">
+    The Graduate Record Examination (GRE) is a standardized test that is required to be taken by students seeking admission to graduate schools. The exam has been developed to evaluate the verbal, analytical and mathematical skills of the candidates. GRE is a computer-based test and has a user-friendly design. Individuals applying to graduate schools in order to pursue a Masters of Science (MS) or MBA are required to take the exam.
+
+    \n\nGRE also has subject tests, apart from the basic GRE exam. These subject tests help to make your application stand out from the rest by highlighting your subject knowledge and skill-level of a particular subject. Each subject test is intended for those students who have a bachelors degree in the particular disciplines. The subject tests being offered currently are Biochemistry, Biology, Chemistry, Literature, Mathematics, Physics, and Psychology.
+    \n\nIf you are applying for MS courses in the US in particular, remember that colleges do not have minimum cutof’ marks required for admission. However, you still need to have an idea about average GRE scores across Top US universities.\n\n
+        </string>
+    <string name="gre_2">
+         The application fee for GRE General Test is $205 worldwide, which would roughly translate to Rs. 13,500 to Rs. 14,500 approximately.
+        \n\nGRE Subject Test costs $150 worldwide, which would cost Indian students Rs. 10,000 to 11,000 approximately\n\n
+
+    </string>
+    <string name="gre_3">
+        There are no specific eligibility criteria for the GRE exam. Anyone can register for this exam, irrespective of age or qualifications. The only thing you need to keep in mind is the fact that you will be required to produce your original passport as proof of identity at the exam center, so make sure that you have a valid passport before you register for the GRE exam.\n\n
+    </string>
+    <string name="gre_4">
+          GRE exam pattern is as follow- three sections, namely, Analytical Writing, Verbal Reasoning and Quantitative Reasoning. The Analytical Writing section will always be the first, whereas, the Verbal Reasoning, Quantitative Reasoning, and unscored sections may appear in any order. The writing section has two tasks and you have 30 minutes to complete each task, making the total time for this section to be one hour. Verbal section has to be completed within one hour as well as both the two sections require 30 minutes each. Same goes for quantitative section, where you get 35 minutes for the two sections. Here we cover the GRE General test pattern.
+        \n\n
+
+        Here is the GRE paper pattern -\n\n
+
+        <b>Section</b>           : Analytical Writing(One section with two separately timed tasks)\n
+        <b>No. of Questions</b>  : One "Analyze an Issue" task and one "Analyze an Argument" task\n
+        <b>Duration</b>          : 30 minutes per task\n\n
+
+        <b>Section</b>           : Verbal Reasoning(Two sections)\n
+        <b>No. of Questions</b>  : 20 questions per section\n
+        <b>Duration</b>          : 30 minutes per section\n\n
+
+        <b>Section</b>           : Quantitative Reasoning(Two sections)\n
+        <b>No. of Questions</b>  : 20 questions per section\n
+        <b>Duration</b>          : 35 minutes per section\n\n
+    </string>
+    <string name="gre_5">
+         <b>Verbal Reasoning score</b>:  On a 130–170 score scale, in 1-point increments
+        \n\n<b>Quantitative Reasoning score</b>:  On a 130–170 score scale, in 1-point increments
+        \n\n<b>Analytical Writing score</b>: On a 0–6 score scale, in half-point increments
+        \n\n<b>GRE total score</b>: On a 260–340 score scale\n\n
+    </string>
+    <string name="gre_6">
+       The Quantitative Reasoning section of the GRE General Test examines your basic mathematical skills, understanding of elementary mathematical concepts, and ability to reason with numbers and to solve problems with quantitative methods.
+        \n\n<b>Question Types in revised GRE</b>
+        \nQuantitative Reasoning has two sections, each with 20 questions which should be completed within 35 minutes.
+
+        \n\nYou will get questions from three math topics.
+
+        \n\n<b>1. Compare quantities – (6 to 8 questions)</b>
+        \nThese questions ask you to compare two quantities (A and B) and then determine the relationship between them; whether A is greater, B is greater, the two are equal, or the relationship cannot be determined from the information given.
+
+        \n\n<b>2. Data Interpretation or Graphs – (5 to 7 questions)</b>
+        \nThese questions require you to compute information and chose a correct answer based on visual graphs and tables. You need to interpret the data given in those forms and choose the correct answer accordingly.
+
+        \n\n<b>3. Numeric Entry questions – (2 questions)</b>
+        \nThese questions require you to enter your answer in an answer box rather than choose among alternatives.
+
+        \n\nThe best part about the GRE quantitative section is that the math topics covered are taught in schools like algebra, introductory statistics courses etc. this section does not include higher-level mathematics lie inferential statistics, trigonometry, or calculus.\n\n
+    </string>
+    <string name="gre_7">
+        The Verbal Reasoning section of the GRE is often seen as difficult as the mathematics portion due to a big amount of vocabulary included. The purpose of the Verbal Reasoning section of the GRE is to assess your comprehension of written material and your ability to evaluate it. The GRE Verbal Reasoning test also measures your skill in analyzing sentence structure and your understanding of relationships between words and concepts.
+
+        \n\nThe verbal reasoning section of the GRE contains questions of three types:
+
+        \n\n<b>1. Sentence Equivalence</b>
+        \n<b>2. Text Completion</b>
+        \n<b>3. Reading Comprehension</b>
+        \n\nEach verbal section will consist of twenty questions. Half of the section will consist of text completion and sentence equivalence questions; the other half will consist of reading comprehension questions.
+
+        \n\nThe test will always begin with six Text Completion, which increase according to difficulty. Next, will be a reading passage or two, which could either a long passage or two medium passages. In between the reading passages will be four Sentence Equivalence questions.\n\n
+    </string>
+    <string name="gre_8">
+         In GRE, the Analytical Writing section is designed to assess critical thinking and analytical writing skills, which is reflected by your ability to express complex ideas clearly and effectively while maintaining a coherent and focused discussion. Many students lose sight of the fact that the test does not evaluate you content knowledge. So what opinion you provide has no right or wrong answer.
+
+        \n\nQuestion Types
+        \n\nIn Writing section there will be two separately timed essays. For each essay, you will be given 30 minutes to address a specified topic.
+
+        \n\n1. Analyze an Issue
+        \n2. Analyze an Argument
+        \n\n<b>Analyze an Issue:</b> It is required to write an essay in which you respond to a brief statement over an issue of general interest. This task assesses your ability to think critically about a general interest topic and express your thoughts in writing.  You will be given an issue statement that can be viewed from several different angles. You will be directed to adopt a position on the issue, and to develop and support that position.
+
+        \n\n<b>Analyze an Argument:</b> Your task is to compose an essay in which you analyze a paragraph-length argument. However you do not have to present your own views on the arguments topic. This task assesses your ability to understand, analyze, and evaluate arguments. The arguments will be presented in a brief paragraph that puts forth the author’s opinion or case. You need to determine if it is logically sound and evaluate it.\n\n
+    </string>
+
+
+    <string name="toefl_1">
+
+        Test of English as Foreign Language (TOEFL) is the most popular English proficiency exam accepted at North American universities. TOEFL tests the international students usage and understanding of North American English as it is spoken, written and heard in college and university settings. The TOEFL test is developed and administered by Educational Testing Service (ETS), which sets the questions, conducts the test, and sends each examinee the score report.
+
+        \n\nOften, students are confused if they need to prepare only for TOEFL or other exams are also required for admission to the US and Canadian universities. How many exams you need to prepare completely depends on the type of course you are applying to. For all undergraduate courses in the US and some in Canada, you need to prepare for SAT. For MBA courses GMAT scores are a requirement; similarly, for MS courses GRE scores are relevant. Along with all these exams, you have to take either IELTS or TOEFL.
+
+        \n\nOften international students don’t know how to choose between IELTS or TOEFL, as universities abroad ask for either exam scores. Since TOEFL syllabus is designed to test your understanding of North-American English, it should be your first choice if you are applying to universities in US and Canada. For rest of the countries, especially the UK and Australia, IELTS is usually the more preferred language exam, but TOEFL is also accepted.
+
+        \n\nTOEFL test is conducted round the year and has more than 50 test dates per year. You can retake the test as many times as you wish, but to take a re-test you have to wait for a 12-day period after attempting the first test.\n\n
+
+    </string>
+
+    <string name="toefl_2">
+
+        The registration fee for TOEFL is $170, which would roughly translate to Rs. 11,000 to 11,500 (approx).\n\n
+
+    </string>
+
+    <string name="toefl_3">
+
+        TOEFL exam pattern is as follow - four sections, namely, Reading, Listening, Speaking and Writing - along with the total score. It goes without saying that the more you practice TOEFL sample papers, the better your scores will be.
+
+        \n\nThe total score is the sum of the scores of the four skill areas. Scores will be posted online 10 days after the test date. ETS will send up to four official score reports directly to the institutions the student selects.
+
+        \n\nHere we cover the TOEFL iBT test pattern.
+
+        \n\n<b>Section :</b>Reading
+        \n<b>Duration :</b>60–80 minutes
+        \n<b>Questions :</b>36–56 questions
+        \n<b>Tasks :</b>Reading 3 or 4 passages from academic texts and answering questions.
+
+        \n\n<b>Section :</b>Listening
+        \n<b>Duration :</b>60–90 minutes
+        \n<b>Questions :</b>34–51 questions
+        \n<b>Tasks :</b>Listening to lectures, classroom discussions, and conversations, and then answering questions.
+
+        \n\n<b>Section :</b>Speaking
+        \n<b>Duration :</b>20 minutes
+        \n<b>Questions :</b>6 tasks
+        \n<b>Tasks :</b>Expressing your opinion on a familiar topic and speaking based on reading and listening tasks.
+
+        \n\n<b>Section :</b>Writing
+        \n<b>Duration :</b>50 minutes
+        \n<b>Questions :</b>2 tasks
+        \n<b>Tasks :</b>Writing essay responses based on reading and listening tasks, along with supporting an opinion in writing.\n\n
+
+    </string>
+
+
+    <string name="toefl_4">
+        For calculating TOEFL scores, both human raters and automated scoring methods are used. This is done in order to offer a complete and accurate picture of the candidate’s ability. While the automated scoring method has the advantage of being unbiased, it does not measure the effectiveness of the language and content. Human raters are required to attend to a wider variety of features, such as the quality of ideas and content as well as form.
+
+        \n\nThe four section scores of the TOEFL are divided as follow:
+
+       \n\n<b>Section</b>\t\t\t\t\t<b>Score Range</b>\t\t<b>Mean Scores*</b>
+        \nReading\t\t\t\t\t\t\t0–30\t\t\t\t\t\t\t\t\t20
+        \nListening\t\t\t\t\t\t0–30\t\t\t\t\t\t\t\t\t19
+        \nSpeaking\t\t\t\t\t\t0–30\t\t\t\t\t\t\t\t\t19
+        \nWriting\t\t\t\t\t\t\t0–30\t\t\t\t\t\t\t\t\t20
+        \nTotal Score\t\t\t\t\t0–120\t\t\t\t\t\t\t\t80\n\n
+
+    </string>
+    <string name="toefl_5">
+
+        There are two ways all exam-takers prepare for TOEFL i.e. self-study and attending coaching classes. Both these methods of studying have unique benefits and no one way is better than the other. If money is the prime consideration, then self-studies through TOEFL books and resources may be the better option. Similarly, if you need professional guidance to ensure you have some advantage in TOEFL exam preparation, then enrolling for a TOEFL coaching center is the better option.\n\n
+    </string>
+    <string name="toefl_6">
+
+        <b>General Speaking Skills:</b>
+        \nBuild your vocabulary. Search out, study, memorize, and use new vocabulary. Synonyms are specially important. Use synonyms to demonstrate that your language has a good range and is not repetitive or limited.
+\nUse correct English intonation. Be sure to understand the basic rules of English intonation. Be able to make your own choices with English intonation. Learn to naturally emphasize the words and phrases you feel are most important.
+\nPronounce the sounds in English correctly. Learn, understand, and be aware of the different mouth movements in English pronunciation.
+
+        \n\n<b>Test-Specific Skills:</b>
+\nAnswer the whole question. Learn to both read and listen to TOEFL speaking questions critically. Plan, outline and speak answers that address every question point. For this skill, you may want to check your answers with a teacher, tutor, or classmate. A second set of eyes or ears may be able to see an aspect of the question that you didn’t address.
+\nPlan and structure your answer. You have a very short period of time to jot down notes and a basic outline for your TOEFL speaking answer. But you should never skip this step. Organizing your answer correctly helps you think more deeply about speaking. Good organization also boosts your TOEFL score. You should also consider studying a TOEFL Speaking template.
+\nKnow the different tasks. There are two independent speaking. The remaining four speaking tasks are integrated. Understand the differences between each of the six tasks.
+
+
+        \n\n<b>Practice activities:</b>
+        \nReview and use official TOEFL Speaking materials. Practice answering questions and review sample speaking answers from ETS resources. Be sure to check out the official TOEFL website and the ETS practice books. You can also do TOEFL-like practice questions from unofficial sources.
+
+       \n Do other less test-specific practice to build on your overall speaking skills. Kate covers several good skill practice activities here. You can also look at my list of general speaking practice for the TOEFL.\n\n
+
+    </string>
+    <string name="toefl_7">
+
+         <b>General Skills</b>
+        \nBuild vocabulary. Written English uses a wider range of words than spoken English. Seek out and learn new words as much as you can.
+        \nKnow synonyms and understand their role in paraphrasing. As Lucas mentions, synonyms are very important in TOEFL Reading. Many of the questions and answer choices will paraphrase ideas from the text, shortening and re-wording them. Changes in wording can sometimes also change meaning. Be able to recognize accurate paraphrases and synonyms, as well as false paraphrases that change the original meaning of what you’ve read.
+        \nRead attentively. This may sound silly. How can you read something if you’re not paying attention to it? Well, it is possible, especially if you find yourself reading and studying a lot. I remember many times in my own university years when I spent an hour or so reading a text, only to realize I didn’t remember or understand what I’d read. As you read, actively note of the main ideas. Identify any parts of the reading you don’t fully understand and look for clarification. If you are having trouble focusing on what you read, refocus or take a break if need be.
+        \nRead critically. TOEFL Reading asks you to go beyond simply understanding what you read. As you read, be able to make inferences, understand how ideas connect, and recognize the author’s intent and purpose.
+        \n\n<b>Test-specific skills</b>
+        \nKnow your TOEFL Reading question types, and how to answer them. As Kate explains, there are three broad categories of questions in TOEFL Reading: basic information questions, inference questions, and reading-to-learn questions. Basic information questions ask you to understand vocabulary in context, identify correct paraphrasing, comprehend small details in a reading, and understand references made by pronouns and demonstratives. Inference questions ask you to infer unstated information in the reading and also understand the author’s purpose. Reading-to-learn questions require the most active involvement from the test-taker. Here, you’ll need to categorize ideas from the reading, organize a summary of what you’ve read, and insert additional sentences into the passage.
+        \nKnow what kinds of readings will be on the test. TOEFL Reading passages cover many types (but not all types) of readings common in first-year university classrooms. You are unlikely to find highly mathematical topics. And all topics are introductory readings, designed to newly introduce someone to an academic subject.
+
+
+        \n\n<b>Practice activities:</b>
+        \nRead! The best way to get better at reading a language is to read a lot. Lucas recommends some good TOEFL and non-TOEFL reading material that will help you build your skills for the Reading Section.
+        \nAs you read, make sure you are both comprehending the words and understanding the inferences. There are a number of ways to do this.
+        \nYou should also practice your reading-to-learn skills while you read. Add sentences to things you read, chart and categorize key ideas from your readings, and create summaries.\n\n
+
+    </string>
+
+    <string name="toefl_8">
+
+        <b>General Listening Skills</b>
+        \nRecognize the intonational rhythm of English. You don’t have to study intonation as much as you would for TOEFL Speaking. However, knowing the tones of important words and sentence transitions is key to understanding what you hear.
+        \nBe able to hear and recognize the sounds in English. Again, you don’t need to study every sound as intensely as you would for spoken pronunciation. But you should make sure you can hear the difference between slightly different but distinct sounds in English, such as “d” and “t,” “b” and “v,” “l” and “r,” etc…
+        \nBecome a good note-taker. Learn to keep pace with what you hear, taking notes attentively but quickly.
+
+
+        \n\n<b>Test-Taking Skills</b>
+        \nLearn to take notes effectively. This includes knowing which information is important and which information you can probably ignore. Effective note taking also involves proper pacing. Be able to keep up with the speed of TOEFL Listening tracks as much as possible.
+        \nSpeaking of pacing, learn to manage your time as you answer questions. Be aware of how much time you have per question. Be prepared to move on or make a quick, educated guess if you are stuck on a difficult answer.
+        \nBe familiar with the different kinds of listening tracks on the TOEFL. You’ll hear conversations that involve opinions, problem solving and student life. You’ll also hear lectures, some that include student participation, and some that don’t. Be aware that different kinds of recordings require different approaches from the test-taker.
+        \nKnow how to answer the different types of TOEFL Listening questions. Understand the different requirements and strategies for questions related to detail, attitude, function, organization, main ideas, inference, categorizing, and so on.
+
+
+        \n\n<b>Practice activities:</b>
+        \nListen to transcripted English speeches and talks. Read the transcripts as you listen. While you won’t be able to read transcripts or captions on the TOEFL itself, this is still very good listening practice. Reading the transcripts can help you identify and learn new words common in spoken English. Looking at a written version of speech can also help you understand the structure of academic spoken English. You can find good transcripted English speech on websites like TED Talks, Upworthy, Khan Academy, and even right here at Magoosh.
+        \nExpose yourself to real English lectures and conversations. Talk with others you know who speak English. If you can, attend English lectures and ask the speaker questions. Even if you live in a place with few other English speakers, there are ways to do this by phone or Internet.
+        \nPractice actual TOEFL Listening Exercises, using the official TOEFL website and other recommended materials.\n\n
+
+    </string>
+
+    <string name="ielts_1">
+        International English Language Testing System (IELTS) is an English language exam that is required to be taken by international candidates considering studying or working in a country where English is the main language of communication. Most popular countries where IELTS is accepted for university admissions are UK, Australia, New Zealand, US, Canada. The exam mainly measures the ability of test-takers to communicate in the four basic language skills – listening, reading, speaking, and writing.
+
+        \n\nA lot of students get confused about why are the IELTS scores required. The simple answer to this is that foreign universities and visa granting authorities need to be sure that you will not have communication issues while staying in the country. You need to show a good understanding and strong command of the English language and that is why your overall IELTS scores are so important. Another common doubt students have is whether IELTS is a compulsory exam or not. No, IELTS isn’t compulsory in all university admissions. Many universities might even not even require IELTS scores for admission purposes. But remember that if you don’t give IELTS, your chances of getting the student visa might suffer as the visa officers may not be convinced about your English proficiency without IELTS scores. So it is safer to appear for IELTS and aim to score at least 6 bands overall.
+
+        \n\nOften international students are confused between choosing IELTS or TOEFL, as universities abroad ask for either exam scores. It is up to you as a test taker to decide which of the two exams to take, but remember that IELTS is more preferred in UK, Australia, and New Zealand, while TOEFL is popular among applicants to universities in US and Canada. So knowing the required average scores for US universities and average scores for Canadian universities is an important start.
+
+        \n\nYou can take IELTS exam with the British Council or IDP up to once a week (four times a month). The British Council and IDP global schedule for test dates are 48 days per year.
+
+    </string>
+    <string name="ielts_2">
+        The registration fee for IELTS is Rs. 11,300
+
+        \n\n<b>How to Register for IELTS</b>
+        \nAmong the language exams required for admissions to universities abroad, IELTS is the most popular exam among Indian students. It is available in two formats: Academic IELTS and General IELTS. Students are required to take the Academic test, while all other applicants who need IELTS scores for Visa purposes need to take the General test. Here in this article, we will look at IELTS Academic test.
+
+
+
+        \n\n<b>IELTS Eligibility</b>
+        \nIELTS exam is open for all and there are no specific eligibility criteria. The respective institutes may have a different eligibility criteria but the IELTS has no specific selection criteria. IELTS test is recommended for candidates who are 16 years and above.
+
+
+        \n\n<b>IELTS registration</b>
+        \nIELTS test is available on 48 fixed dates per year (up to four times a month), depending on local demand. The candidates have the liberty of giving the exam on any of the 48 days in as per their convenience.
+
+        \n\nOnline – you need to go on the British Council IELTS registration page and create an online profile. Then you’ll be required to pay the exam fee. Online registration on the British Council IELTS India website is the fastest and easiest method. Through the online method, you can register anytime and on any day. You will be required to pay with a credit/debit card.
+
+
+        \n\nIn person – You can register in person at British Council office or an IDP India office. You may download the online form or fill in a paper application at the office. You will be required to pay the fee through credit card/debit card, demand draft or ICICI bank deposit slip. You will receive an instant confirmation of your reservation.
+
+    </string>
+    <string name="ielts_3">
+
+
+    IELTS Syllabus includes four sections - Reading, Listening, Speaking and Writing. You get marked on these four sections and you get the IELTS total score as well. The total score is the sum of the scores in the four skill areas.
+
+    \n\nThe total test duration is 2 hours and 45 minutes
+
+    \n\nHere is the IELTS paper pattern -\n\n
+
+        <b>Section</b> : Listening
+        \n<b>Duration</b> : 30 minutes
+        \n<b>IELTS Academic</b> : It encompasses four recorded monologues and conversations
+
+        \n\n<b>Section</b> : Reading
+        \n<b>Duration</b> : 60 minutes
+        \n<b>IELTS Academic</b> : Three long reading passages with tasks.
+        \nTexts range from descriptive and factual to discursive, and analytical includes non-verbal material like diagrams, graphs and illustrations texts are authentic (taken from books, journals and newspapers)
+
+        \n\n<b>Section</b> : Writing
+        \n<b>Duration</b> : 60 minutes
+        \n<b>IELTS Academic</b> : A writing task of at least 150 words where the candidate must summarize, describe or explain table, graph, chart or diagram, and another short essay task of at least 250 words
+
+        \n\n<b>Section</b> : Speaking
+        \n<b>Duration</b> : 11 to 14 minutes
+        \n<b>IELTS Academic</b> :Face-to-face interview includes short questions, speaking at length about a familiar topic and a structured discussion
+        \nListening, Reading and Writing sections are tested in one sitting. Speaking section may be on the same day or up to seven days before or after other tests.
+
+
+    </string>
+    <string name="ielts_4">
+        IELTS is designed to assess English language skills at all levels. Your total IELTS score will be a combination of the band scores from the four sections. You will receive IELTS scores based on each for the four skills on a band of 1 – 9, and you will also be awarded an overall band score. You can score whole (example 5.0, 6.0, 7.0) or half (example 5.5, 6.5, 7.5) bands in each part of the test. You need to have some idea about how the scoring pattern works to better understand how your IELTS score will be calculated.
+
+        \n\n<b>Section</b>\t\t\t\t\t\t<b>Score Range</b>\t\t\t\t\t<b>Mean*</b>
+        \nListening\t\t\t\t\t\t\t\t1-9\t\t\t\t\t\t\t\t\t6.2
+        \nReading\t\t\t\t\t\t\t\t\t1-9\t\t\t\t\t\t\t\t\t5.8
+        \nWriting\t\t\t\t\t\t\t\t\t1-9\t\t\t\t\t\t\t\t\t5.6
+        \nSpeaking\t\t\t\t\t\t\t\t1-9\t\t\t\t\t\t\t\t\t5.8
+        \nTotal\t\t\t\t\t\t\t\t\t\t\t0-9\t\t\t\t\t\t\t\t\t5.9
+
+        \n\n<b>IELTS score validity</b> – Validity of IELTS scores is until two years after the date candidate took the exam on.
+
+        \n\n<b>IELTS Result</b>
+        \nYou wont have long to wait for your results as IELTS test results are released online 13 calendar days after you sit for the test. You will receive an email when your scores are available. You can log into your IELTS account on the IELTS Results website to see your scores.\n\n
+    </string>
+    <string name="ielts_5">
+        For the IELTS exam, British Council Global Schedule for global exam dates is 48 days per year.
+
+        \n\nYou can choose any date according to your convenience and availability. The exam date that you choose should be at least three-four months before your first application deadline. The basic idea is that you need to start preparing for IELTS a couple of months before submitting your application to colleges\n\n
+    </string>
+    <string name="ielts_6">
+        There are two ways to prepare for IELTS: self-studying and attending coaching classes. Which way you will choose depends on your language proficiency and comfort level. If you are already fluent in English, you need not attend coaching classes; you can prepare for the exam on your own. You just need to figure out when to start preparing for IELTS
+
+        \n\nAlso, if money is an important consideration, then self-study is the better option. However, remember that to study on your own, you need good resource books and study material.
+
+        \n\nOn the other hand, if you don’t have enough time and you need professional supervision for the exam preparation then coaching classes are a good option. Since regularly attending classes will become part of your routine, your time will be better managed.\n\n
+
+    </string>
+    <string name="ielts_7">
+
+        Keep the length of your answers relevant. If you decide to keep on speaking until the examiner stops you, that will be wrong as the examiner may never stop you and you may start losing focus.
+        \n\nDon’t learn answers ‘by heart’ and practice them. This process will make you more nervous, and the chances are you will not asked the exact same question you prepared for.
+        \n\nListen to the question carefully and then answer it. If you need any clarification, ask before answering so that your answer is relevant.
+        \n\nTalk in English before your exam. The simple reason behind this is to get your mind to start thinking in English. The best way to talk in English is to first start processing your thoughts in English.\n\n
+        </string>
+    <string name="ielts_8">
+
+        Don’t divide total time by the number of questions. You get 60 minutes to answer 40 questions, so that gives you one and half minutes on each question. This process is wrong as there are different strategies that you need to consider. The initial few questions will take longer because you still have to figure out how the text is organized. You can decide to give a bit more time to the more hard passage, and a bit less to the easier one.
+        \n\nIt is not necessary to first read the question and then read the passage to figure out where the answer is. It might work for some people, and may not for others. You can read the text quickly to get an idea of the content. You save time this way as you know which part of the text has the answer. First try both approaches and see which one works better for you as there is no right or wrong approach.\n\n
+
+    </string>
+    <string name="ielts_9">
+
+        Leave as much time as possible for planning out the written answers. If you know what you want to say, you will write quicker and more precisely. First take two minutes to organize your thoughts and then start writing.
+        \n\nSave five minutes for the end to read your answer again. This is done to make sure there aren’t any repeated words. This is called repetition in language, and is a fatal error in any language exam. Make sure to double-check your answer.\n\n
+    </string>
+    <string name="ielts_10">
+        Focus on the whole question, not don’t just look for keywords in it. Two questions can contain one keyword but can be completely different. Keywords only tell you the context of the question, not the answer.
+        \n\nDon’t write down everything as you are listening. If you are busy writing, then you are not listening.
+        \n\nSimilar to the reading section, look at the complete question and listen closely. You will be required to read, write and think at the same time but most of your time needs to be spent listening.\n\n
+
+    </string>
+
+
+    <string name="title_activity_first_page">first_page</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_toefl__scrolling">TOEFL_ScrollingActivity</string>
+    <string name="title_activity_ielts__scrolling">IELTS_ScrollingActivity</string>
+    <string name="title_activity_university__scrolling">university_ScrollingActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

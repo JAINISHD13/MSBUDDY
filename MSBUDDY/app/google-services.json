@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "915792805398",
+    "firebase_url": "https://msbuddy2-eecad.firebaseio.com",
+    "project_id": "msbuddy2-eecad",
+    "storage_bucket": "msbuddy2-eecad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:915792805398:android:519a3a64e4a185b5",
+        "android_client_info": {
+          "package_name": "com.example.anew.msbuddy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "915792805398-3agofitrhr7b7kkaagk59h5of61d2538.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anew.msbuddy",
+            "certificate_hash": "09e914a4ef7c93709bfe816096248053192a2a3b"
+          }
+        },
+        {
+          "client_id": "915792805398-fiu15bphrje457ivctrm0e3ng2d73dq9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCzXgtLu-rqyTORC9WYR1DgwWNnVeMmzcc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "915792805398-fiu15bphrje457ivctrm0e3ng2d73dq9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.anew.msbuddy"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="26" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:name="com.example.anew.msbuddy.GlobalClass"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.anew.msbuddy.GRE_ScrollingActivity"
+            android:label="@string/title_activity_gre__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.anew.msbuddy.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.anew.msbuddy.TOEFL_ScrollingActivity"
+            android:label="@string/title_activity_toefl__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.anew.msbuddy.IELTS_ScrollingActivity"
+            android:label="@string/title_activity_ielts__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.anew.msbuddy.university_ScrollingActivity"
+            android:label="@string/title_activity_university__scrolling"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.anew.msbuddy.Evaluated_Result" />
+        <activity android:name="com.example.anew.msbuddy.final_University_Result" />
+        <activity
+            android:name="com.example.anew.msbuddy.Home"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.anew.msbuddy.Apply_Semester" />
+        <activity android:name="com.example.anew.msbuddy.EducationActivity" />
+        <activity android:name="com.example.anew.msbuddy.ExamActivity" />
+        <activity android:name="com.example.anew.msbuddy.GREMarks" />
+        <activity android:name="com.example.anew.msbuddy.EnglishProficiency" />
+        <activity android:name="com.example.anew.msbuddy.TOEFLMarks" />
+        <activity android:name="com.example.anew.msbuddy.IELTSMarks" />
+        <activity android:name="com.example.anew.msbuddy.UniversityDetail" />
+        <activity android:name="com.example.anew.msbuddy.User_Details" />
+        <activity android:name="com.example.anew.msbuddy.UniversityDecision" />
+        <activity android:name="com.example.anew.msbuddy.UniversityWhole" />
+        <activity android:name="com.example.anew.msbuddy.UniversitySelection" />
+        <activity android:name="com.example.anew.msbuddy.University_detail_page" />
+
+        <meta-data
+            android:name="android.support.VERSION"
+            android:value="26.0.2" />
+
+        <provider
+            android:name="com.android.tools.ir.server.InstantRunContentProvider"
+            android:authorities="com.example.anew.msbuddy.com.android.tools.ir.server.InstantRunContentProvider"
+            android:multiprocess="true" />
+    </application>
+
+</manifest>

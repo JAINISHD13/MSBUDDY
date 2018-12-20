@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.github.worker8:tourguide-1.0.19-SNAPSHOT">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tourguide-1.0.19-SNAPSHOT.aar/8b233bf6918b4903de2457feafa033da/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tourguide-1.0.19-SNAPSHOT.aar/8b233bf6918b4903de2457feafa033da/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.worker8/tourguide/1.0.19-SNAPSHOT/32585f54576dffaa62e3fff96b7144cc19393f12/tourguide-1.0.19-SNAPSHOT-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

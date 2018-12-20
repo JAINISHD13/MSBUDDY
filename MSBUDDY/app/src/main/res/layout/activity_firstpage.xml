@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/relative_layout"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.anew.msbuddy.firstpage"
+    android:background="#006666">
+
+    <FrameLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <!-- You won't use the src tag seeing as you get your image from a -->
+        <!-- server, but I have it for the sake of demonstration.          -->
+        <ImageView
+            android:id="@+id/your_image_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+
+            android:src="@drawable/download"/>
+
+        <!-- This is a basic view that has a black background and a .4 alpha -->
+        <View
+            android:id="@+id/shadow_view"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:alpha=".4"
+            android:background="#000000"/>
+
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MS Buddy"
+        android:textStyle="bold|italic"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:id="@+id/textView6"
+        android:textSize="70dp"
+        android:textColorHighlight="#ffffff"
+        android:shadowColor="#000000"
+        android:shadowRadius="2"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

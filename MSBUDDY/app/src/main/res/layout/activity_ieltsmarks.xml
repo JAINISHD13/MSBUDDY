@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="?attr/colorButtonNormal"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txt1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What is your IELTS score?"
+                android:layout_marginLeft="25dp"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/reading"
+                android:text="Reading"
+                android:layout_marginTop="15dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reading"
+                android:progress="20" />
+
+            <TextView
+                android:id="@+id/seekreadtxt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/reading"
+                android:layout_alignStart="@+id/reading"
+                android:layout_below="@+id/reading"/>
+
+            <TextView
+                android:id="@+id/listening"
+                android:text="Listening"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seek1"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/listening"
+                />
+
+            <TextView
+                android:id="@+id/seeklistentxt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/listening"
+                android:layout_alignStart="@+id/listening"
+                android:layout_below="@+id/listening"/>
+
+
+            <TextView
+                android:id="@+id/writing"
+                android:text="Writing"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seek2"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/writing"
+                />
+
+            <TextView
+                android:id="@+id/seekwrientxt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/writing"
+                android:layout_alignStart="@+id/writing"
+                android:layout_below="@+id/writing"/>
+            <TextView
+                android:id="@+id/speaking"
+                android:text="Speaking"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold"
+                android:textSize="30sp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seek3"
+                />
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/seek4"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/speaking"
+
+                />
+
+            <TextView
+                android:id="@+id/seekspeaktxt"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_alignLeft="@+id/speaking"
+                android:layout_alignStart="@+id/speaking"
+                android:layout_below="@+id/speaking"/>
+
+            <TextView
+                android:id="@+id/txtback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="14dp"
+                android:text="back"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txt1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/txt1"
+                android:layout_marginBottom="14dp"
+                android:text="Proceed>>"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

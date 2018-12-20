@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/c1"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="?attr/colorButtonNormal"
+        app:cardCornerRadius="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semester Applying for?"
+                android:textColor="@color/cardview_dark_background"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_below="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radioButton1"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:layout_marginLeft="50dp"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:layout_below="@+id/txt1"
+                    android:layout_marginTop="30dp"
+                    android:checked="false"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:scaleX="1.2"
+                    android:scaleY="1.2"
+                    android:layout_marginLeft="50dp"
+                    android:layout_below="@+id/radioButton1"
+                    android:text="2019, January"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:textSize="25sp"
+                    android:checked="false"
+                    />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/txt1"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/txt1"
+                android:layout_marginBottom="14dp"
+                android:text="Proceed>>"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

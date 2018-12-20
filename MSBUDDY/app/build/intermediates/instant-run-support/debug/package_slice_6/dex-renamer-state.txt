@@ -1,0 +1,4 @@
+#Thu May 10 06:28:36 IST 2018
+base.0=C\:\\Users\\Admin\\AndroidStudioProjects\\MSBUDDY\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\45
+path.0=classes.dex
+renamed.0=classes.dex

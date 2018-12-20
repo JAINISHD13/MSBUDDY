@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.anew.msbuddy.UniversityDecision">
+
+
+    <TextView
+        android:id="@+id/lbl1"
+        android:text="University Decision"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="30sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.GridLayout
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:scrollbars="horizontal">
+
+
+                <!--Card2 -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/c2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="?attr/colorButtonNormal"
+                    app:cardCornerRadius="30dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/rankwhole"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/rank_bg"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/locationwhole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignRight="@+id/uninamewhole"
+                            android:layout_below="@+id/uninamewhole"
+                            android:layout_marginTop="9dp"
+                            android:text="Location" />
+
+                        <TextView
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/locationwhole"
+                            android:layout_marginTop="10dp"
+                            android:text="---------------------------------------------------------------------------" />
+
+                        <TextView
+                            android:id="@+id/tut2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/line2"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Tuition Fees"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tuitionfeeswhole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/tut2"
+                            android:layout_alignBottom="@+id/tut2"
+                            android:layout_alignEnd="@+id/locationwhole"
+                            android:layout_alignRight="@+id/locationwhole"
+                            android:layout_marginEnd="22dp"
+                            android:layout_marginRight="22dp"
+                            android:text="27000$"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/uninamewhole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="5dp"
+                            android:text="University Name"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/web2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tut2"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Website"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/websitewhole"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBaseline="@+id/web2"
+                            android:layout_alignBottom="@+id/web2"
+                            android:layout_alignLeft="@+id/tuitionfeeswhole"
+                            android:layout_alignStart="@+id/tuitionfeeswhole"
+                            android:autoLink="web"
+                            android:text="www.stevens.edu"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/des2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/websitewhole"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="25dp"
+                            android:text="Description"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/decision2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_above="@+id/aord2"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="15dp"
+                            android:text="Decision"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/aord2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="20dp"
+                            android:background="@drawable/my_button_bg"
+                            android:text="ACCEPT"
+                            android:textColor="@color/cardview_dark_background"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <ScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_above="@+id/decision2"
+                            android:layout_below="@+id/des2">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Princeton, the fourth-oldest college in the United States, is located in the quiet town of Princeton, New Jersey. Within the walls of its historic ivy-covered campus, Princeton offers a number of events, activities and organizations. The Princeton Tigers, members of the Ivy League, are well known for their consistently strong men's and women's lacrosse teams. Students live in one of six residential colleges that provide a residential community as well as dining services but have the option to join one of more than 10 eating clubs for their junior and senior years. The eating clubs serve as social and dining organizations for the students who join them. Princeton's unofficial motto, In the Nation's Service and in the Service of All Nations, speaks to the university's commitment to community service." />
+
+                        </ScrollView>
+                    </RelativeLayout>
+
+                </android.support.v7.widget.CardView>
+
+            </android.support.v7.widget.GridLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
